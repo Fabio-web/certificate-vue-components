@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+
+  height: 100vh;
+
+  background-color: #FAFBFD;
+
+  padding: 47px 0 0 56px;
+
+  .title {
+
+    font: {
+      weight: 600;
+      size: 13px;
+    }
+
+    span {
+      color: #F7542E;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      li {
+        a {
+          font: {
+            weight: 500;
+            size: 14px;
+          };
+
+          &:not(.isOnPage) {
+            color: #9E9E9E;
+          }
+        }
+      }
+    }
+  }
+}

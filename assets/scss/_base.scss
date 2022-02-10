@@ -1,0 +1,36 @@
+* {
+     box-sizing: border-box;
+     font-family: "Poppins", serif;
+}
+
+*:before,
+*:after {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     color: #3F3F3F;
+     font-weight: 400;
+     width: 100%;
+     overflow-x: hidden;
+     min-width: 100vw;
+     background: #ffffff;
+     font-size: 15px;
+}
+
+h1, h2 {
+  font-weight: 500;;
+}
+
+a {
+  text-decoration: none;
+  color: #3F3F3F;
+}
+
+ul, li, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
