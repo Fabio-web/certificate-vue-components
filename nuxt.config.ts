@@ -4,7 +4,7 @@ const config: NuxtConfig = {
    ssr: false,
 
    head: {
-      title: "devChallenges",
+      title: "buttons",
       titleTemplate: "devChallenges - %s",
       htmlAttrs: {
          lang: "en",
