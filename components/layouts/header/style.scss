@@ -3,6 +3,9 @@ header {
    flex-direction: column;
    gap: 87px;
 
+   position: sticky;
+   top: 0px;
+
    height: 100vh;
 
    background-color: #FAFBFD;
