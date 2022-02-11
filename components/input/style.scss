@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.input {
+   position: relative;
+   font-family: "Noto Sans JP", sans-serif;
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+   width: fit-content;
+
+   &:hover {
+      .label {
+         color: #333333;
+      }
+
+      .item {
+         border-color: #333333;
+      }
+   }
+
+   .label {
+      font: {
+         size: 12px;
+         weight: 400;
+      };
+   }
+
+   .item {
+      width: 200px;
+      border: 1px solid #828282;
+      border-radius: 8px;
+      padding: 18px 12px;
+      font-size: 14px;
+      outline: unset;
+
+      &:disabled {
+         background: #F2F2F2;
+         border-color: #E0E0E0;
+      }
+   }
+
+   &:not(&-error):focus-within {
+      .label {
+         color: #2962FF;
+      }
+
+      .item {
+         border-color: #2962FF !important;
+      }
+   }
+
+   .helper {
+      font-size: 10px;
+      color: #828282;
+   }
+
+   &-error {
+      .label {
+         color: #D32F2F;
+      }
+
+      .item {
+         border-color: #D32F2F;
+      }
+
+      .helper {
+         color: #D32F2F;
+      }
+   }
+
+   &-fw {
+      width: 100%;
+
+      .item {
+         width: 100%;
+      }
+   }
+
+   span[class^=material-icons] {
+      position: absolute;
+      margin-top: 19px;
+      padding: 18px 12px;
+
+      &.end {
+         right: 0;
+      }
+   }
+
+   &-icon-start .item {
+      padding-left: 48px !important;
+   }
+
+   &-icon-end .item {
+      padding-right: 48px !important;
+   }
+
+   &.sm {
+      .item {
+         padding: 10px 12px;
+      }
+
+      span[class^=material-icons] {
+         padding: 10px 12px;
+      }
+   }
+}

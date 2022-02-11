@@ -13,110 +13,110 @@ $red-color: #D32F2F;
 $red-color-dark: #9A0007;
 
 .button {
-  font-family: "Noto Sans JP", sans-serif;
-  background-color: $blue-color;
-  padding: 8px 16px;
+   font-family: "Noto Sans JP", sans-serif;
+   background-color: $blue-color;
+   padding: 8px 16px;
 
-  border: none;
-  border-radius: 6px;
+   border: none;
+   border-radius: 6px;
 
-  color: #ffffff;
+   color: #ffffff;
 
-  font-weight: 500;
-  font-size: 14px;
+   font-weight: 500;
+   font-size: 14px;
 
-  cursor: pointer;
+   cursor: pointer;
 
-  display: flex;
-  align-items: center;
-  gap: 10px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
 
-  span[class^=material-icons] {
-    font-size: 16px;
-  }
+   span[class^=material-icons] {
+      font-size: 16px;
+   }
 
-  &:hover {
-    background: $blue-color-dark;
-    box-shadow: 0 2px 3px rgba(41, 98, 255, 0.2);
-  }
+   &:hover {
+      background: $blue-color-dark;
+      box-shadow: 0 2px 3px rgba(41, 98, 255, 0.2);
+   }
 
-  &.normal, &.default {
-    background-color: $default-color;
-    color: #3f3f3f;
+   &.normal, &.default {
+      background-color: $default-color;
+      color: #3f3f3f;
 
-    &:hover {
-      background-color: $default-color-dark;
-      box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2) !important;
-    }
-  }
+      &:hover {
+         background-color: $default-color-dark;
+         box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2) !important;
+      }
+   }
 
-  &.outline {
-    background-color: #ffffff;
-    border: 1px solid $blue-color;
-    border-radius: 6px;
-    color: $blue-color;
-  }
+   &.outline {
+      background-color: #ffffff;
+      border: 1px solid $blue-color;
+      border-radius: 6px;
+      color: $blue-color;
+   }
 
-  &.text:not(:hover) {
-    background-color: #ffffff !important;
-    border: none;
-    color: $blue-color-dark;
-  }
+   &.text:not(:hover) {
+      background-color: #ffffff !important;
+      border: none;
+      color: $blue-color-dark;
+   }
 
-  &.text:hover, &.outline:hover {
-    background-color: rgba($blue-color-dark, 0.1) !important;
-    box-shadow: none !important;
-    color: $blue-color;
-  }
+   &.text:hover, &.outline:hover {
+      background-color: rgba($blue-color-dark, 0.1) !important;
+      box-shadow: none !important;
+      color: $blue-color;
+   }
 
-  &.disableShadow,
-  &.disableShadow:hover {
-    background-color: $blue-color !important;
-    color: #ffffff;
-    box-shadow: none !important;
-  }
+   &.disableShadow,
+   &.disableShadow:hover {
+      background-color: $blue-color !important;
+      color: #ffffff;
+      box-shadow: none !important;
+   }
 
-  &:disabled, &:disabled:hover {
-    background-color: $default-color !important;
-    color: $default-color-dark !important;
-    cursor: not-allowed;
-    box-shadow: none !important;
-  }
+   &:disabled, &:disabled:hover {
+      background-color: $default-color !important;
+      color: $default-color-dark !important;
+      cursor: not-allowed;
+      box-shadow: none !important;
+   }
 
-  &.text:disabled:hover {
-    background-color: unset !important;
-  }
+   &.text:disabled:hover {
+      background-color: unset !important;
+   }
 
-  &.icon {
-    width: 105px;
-    height: 36px;
-  }
+   &.icon {
+      width: 105px;
+      height: 36px;
+   }
 
-  &.sm {
-    padding: 6px 12px !important;
-  }
+   &.sm {
+      padding: 6px 12px !important;
+   }
 
-  &.lg {
-    padding: 11px 22px !important;
-  }
+   &.lg {
+      padding: 11px 22px !important;
+   }
 
-  &.secondary {
-    background: $grey-color;
-    box-shadow: 0 2px 3px rgba(69, 90, 100, 0.2);
-
-    &:hover {
-      background: $grey-color-dark;
+   &.secondary {
+      background: $grey-color;
       box-shadow: 0 2px 3px rgba(69, 90, 100, 0.2);
-    }
-  }
 
-  &.danger {
-    background: $red-color;
-    box-shadow: 0 2px 3px rgba(211, 47, 47, 0.2);
+      &:hover {
+         background: $grey-color-dark;
+         box-shadow: 0 2px 3px rgba(69, 90, 100, 0.2);
+      }
+   }
 
-    &:hover {
-      background: $red-color-dark;
+   &.danger {
+      background: $red-color;
       box-shadow: 0 2px 3px rgba(211, 47, 47, 0.2);
-    }
-  }
+
+      &:hover {
+         background: $red-color-dark;
+         box-shadow: 0 2px 3px rgba(211, 47, 47, 0.2);
+      }
+   }
 }

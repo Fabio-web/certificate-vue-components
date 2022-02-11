@@ -1,0 +1,11 @@
+.groups {
+   display: flex;
+   flex-direction: column;
+   gap: 45px;
+
+   .group {
+      display: flex;
+      gap: 75px;
+      align-items: flex-end;
+   }
+}
